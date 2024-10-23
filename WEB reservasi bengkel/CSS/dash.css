@@ -1,0 +1,304 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 226, 226);
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    display: flex;
+    list-style: none;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 50px;
+}
+nav ul li a{
+
+    text-decoration: none;
+    font-family: open sans Condensed SemiBold;
+    color: #144579;
+    font-size: 25px;
+    padding: 5px;
+    transition: all;
+    transition-duration: 500ms;
+    border-bottom: 3px solid #14457900;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #144579;
+
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.bantext{
+    position:absolute;
+    align-items: right;
+    top: 20%;
+    color: white;
+}
+.bantext h2{
+    font-size: 70px;
+    font-family: open sans ExtraBold;
+    padding-left: 1200px;
+    padding-right: 100px;
+}
+.bantext p{
+    font-family: open sans condensed SemiBold;
+    font-size: 30px;
+    padding-left: 1200px;
+    padding-right: 100px;
+}
+.Layanan{
+    font-family: open sans condensed SemiBold;
+    font-size: 30px;
+    padding: 20px;
+}
+.listlay-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-wrap: nowrap;
+  }
+  
+.listlay-box {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    flex: 1;
+    font-family: open sans condensed SemiBold;
+}
+.listlay-box img{
+    align-items: center;
+    width: 200px;
+    height: auto
+}
+.listlay-container .listlay-box{
+    font-size: ;
+}
+.listlay-box1{
+    font-size: 30px;
+    /*border: 1px solid black;*/
+    font-family: open sans condensed SemiBold;
+    
+}
+.Mengapa{
+    font-family: open sans condensed SemiBold;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.ars{
+    font-family: open sans condensed Light;
+    padding-left: 30px;
+    padding-bottom: 20px;
+} 
+.card-cont{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    font-family: open sans condensed SemiBold;
+    border-radius: 10px;
+    width: 20%;
+    margin-bottom: 10px;
+    
+}
+.card-cont img{
+margin-bottom: 30px;
+}
+
+.card-box p{
+    font-size: 16px;
+    color: black;
+}
+.pilih{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    border-radius: 300px;
+
+}
+.unggul{
+    position:relative
+    width:400px
+    
+}
+.unggul img{
+    width: 500px;
+    border-radius: 30px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.unggul h3{
+    position: absolute; /* Untuk menempatkan teks di atas gambar */
+    top: 1420px;
+    font-family: 'Open Sans Condensed', SemiBold;
+    font-size: 50px;
+    color: white; /* Warna putih agar kontras dengan gambar */
+    padding: 10px; /* Tambahkan padding untuk estetika */
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+footer {
+    background-color: #144579;
+    color: white;
+    padding: 30px 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: lightgray;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+.buttons{
+    margin: 50px;
+}
+.buttons button{
+    background-color: #333;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    curs
+
+}
+.layanan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.layanan-box {
+    position: relative; 
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    width: 200px; 
+    transition: transform 0.3s;
+}
+
+.layanan-box:hover {
+    transform: scale(1.05);
+}
+
+.layanan-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.layanan-box h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px 0;
+    font-family: 'Open Sans Condensed', SemiBold;
+    margin: 0;
+}
+
+
+
+/* Responsif untuk layar kecil (smartphone) */
+@media only screen and (max-width: 600px) {
+    .listlay-container {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .listlay-box {
+        margin-bottom: 20px;
+        font-size: 5px;
+    }
+
+    .bantext h2, .bantext p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 40px; /* Sesuaikan ukuran font untuk layar kecil */
+    }
+
+    .bantext p {
+        font-size: 18px;
+    }
+
+    .unggul img {
+        width: 100%; /* Buat gambar memenuhi lebar layar */
+    }
+
+    nav ul {
+        flex-direction: column; /* Tumpuk menu navigasi secara vertikal */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+

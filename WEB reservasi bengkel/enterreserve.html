@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Servis</title>
+    <link rel="stylesheet" href="CSS/reserveenter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Data Servis</h1>
+        <form id="serviceForm" action="submit_data.php" method="POST">
+            <div class="form-group">
+                <label for="booking_name">Nama Booking:</label>
+                <input type="text" id="booking_number" name="booking_number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service_date">Jadwal Servis:</label>
+                <input type="date" id="service_date" name="service_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motor_type">Jenis Motor:</label>
+                <input type="text" id="motor_type" name="motor_type" required>
+            </div>
+
+            <div class="form-group">
+                <label for="kilometer">Kilometer:</label>
+                <input type="number" id="kilometer" name="kilometer" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service_type">Jenis Servis:</label>
+                <input type="text" id="service_type" name="service_type" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Keterangan:</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <div class="buttons">
+                <div class="button">
+                    <button type="submit">Simpan Data</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <script>
+        let toastBox = document.getElementById('toastBox');
+        let SuksesMsg = 'Datamu diterima';
+
+        function showToast(msg){
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = msg;
+            toastBox.appendChild(toast);
+
+            setTimeout(() => { toast.remove(); }, 1500);
+        }
+
+        // Intercept form submission
+        document.getElementById('serviceForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            setTimeout(() => {
+                showToast(SuksesMsg); 
+            }, 300); 
+        });
+    </script>
+</body>
+</html>

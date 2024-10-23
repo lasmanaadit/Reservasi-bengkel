@@ -1,0 +1,205 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(128, 128, 128);
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    display: flex;
+    list-style: none;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 50px;
+}
+nav ul li a{
+
+    text-decoration: none;
+    font-family: open sans Condensed SemiBold;
+    color: #144579;
+    font-size: 25px;
+    padding: 5px;
+    transition: all;
+    transition-duration: 500ms;
+    border-bottom: 3px solid #14457900;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #144579;
+
+}
+.regist-cont{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: white;
+    align-items: center;
+    margin:100px;
+    margin-left: 600px;
+    margin-right: 600px;
+    font-family: open sans condensed SemiBold;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    
+}
+.regist-cont h2{
+    font-size: 50px;
+}
+.regist-box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+
+
+}
+input{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgb(214, 214, 214);
+    font-size: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+button{
+    border: none;
+    font-family: open sans condensed SemiBold;
+    background-color: #1EFF00;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+}
+button:hover {
+    background-color: #00CC00; /
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.regist-cont h3{
+    font-size: 10px;
+}
+/* Pop-up container */
+.popup-container {
+    display: none; /* Disembunyikan secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Efek gelap transparan di latar belakang */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Menempatkan pop-up di atas elemen lainnya */
+}
+
+/* Pop-up box */
+.popup-box {
+    font-family: open sans condensed ;
+    background-color: white;
+    padding: 30px;
+    border-radius: 35px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup-box h3 {
+    margin-bottom: 10px;
+}
+
+.popup-box p {
+    margin-bottom: 20px;
+}
+
+/* Tombol dalam pop-up */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#confirm-yes {
+    background-color: #1EFF00;
+    color: white;
+}
+
+#confirm-no {
+    background-color: #FF0000;
+    color: white;
+}
+
+/* Responsif untuk layar kecil (smartphone) */
+@media only screen and (max-width: 600px) {
+    .regist-cont {
+        font-size: 20px; /* Mengurangi ukuran font agar pas di layar kecil */
+        margin: 20px; /* Mengurangi margin untuk layar kecil */
+        padding: 20px; /* Menambahkan padding agar ada ruang di dalam container */
+        margin-left: 20px; /* Mengurangi margin kiri dan kanan */
+        margin-right: 20px;
+    }
+
+    input {
+        width: 100%; /* Mengatur input agar menyesuaikan dengan lebar layar */
+        padding: 15px; /* Mengurangi padding agar input lebih kecil */
+        font-size: 16px; /* Mengurangi ukuran teks pada input */
+    }
+
+    button {
+        width: 100%; /* Mengatur button agar memenuhi lebar container di layar kecil */
+        font-size: 20px; /* Mengurangi ukuran font di button */
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .regist-cont {
+        font-size: 20px; /* Mengurangi ukuran font agar pas di layar kecil */
+        margin: 500px; /* Mengurangi margin untuk layar kecil */
+        padding: 20px; /* Menambahkan padding agar ada ruang di dalam container */
+        margin-left: 70px; /* Mengurangi margin kiri dan kanan */
+        margin-right: 70px;
+    }
+
+    input {
+        width: 100%; /* Mengatur input agar menyesuaikan dengan lebar layar */
+        padding: 15px; /* Mengurangi padding agar input lebih kecil */
+        font-size: 16px; /* Mengurangi ukuran teks pada input */
+    }
+
+    button {
+        width: 100%; /* Mengatur button agar memenuhi lebar container di layar kecil */
+        font-size: 20px; /* Mengurangi ukuran font di button */
+    }
+}
+

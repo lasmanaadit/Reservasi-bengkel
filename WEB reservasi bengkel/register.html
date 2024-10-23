@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>
+        ARSpeed Tuner
+    </title>
+    <link rel="stylesheet" href="CSS/regist.css">
+    <script src="popupregist.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/Aset/logo ARSpeed.png" alt="logo" width="200">
+        </div>
+    </nav>
+    <div class="regist-cont">
+        <h2>REGISTER</h2>
+        <div class="regist-box">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="regist-box">
+            <label for="email">E-Mail</label>
+            <input type="text" id="email" required>
+        </div>
+        <div class="regist-box">
+            <label for="passwrod">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="regist-box">
+            <label for="confirmpassword">Konfirmasi Password</label>
+            <input type="password" id="confirmpass" required>
+        </div>
+        <div class="button-container">
+            <div class="button">
+               <button type="submit">REGISTER</button>
+            </div>
+        </div>
+        <div class="an-log">
+            <h4>kembali ke</h4>
+            <div class="log">
+                <a href="login.html">
+                    <h4>Login</h4></a>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup-container">
+        <div class="popup-box">
+            <h3>Apakah Anda yakin?</h3>
+            <p>Apakah Anda sudah yakin username, email, dan password Anda benar?</p>
+            <div class="popup-buttons">
+                <button id="confirm-yes">Yakin</button>
+                <button id="confirm-no">Tidak Yakin</button>
+            </div>
+        </div>
+    </div>    
+</body>
